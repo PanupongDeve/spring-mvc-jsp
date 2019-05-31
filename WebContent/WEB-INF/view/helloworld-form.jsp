@@ -7,11 +7,15 @@
 <title>Hello World - Input From</title>
 </head>
 <body>
-	<form action="processForm" method="GET">
+	<form action="hello/processFormVersionTwo" method="GET">
 		<input
 			type="text"
 			name="studentName"
 			placeholder="What's yout name?">
+		<input
+			type="text"
+			name="studentLastName"
+			placeholder="What's yout last name?">
 		<input type="submit">
 	</form>
 </body>
