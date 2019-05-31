@@ -13,7 +13,8 @@
 	<hr>
 	${pageContext.request.contextPath}
 	<a href="hello/showForm">Hello World form</a> <br/>
-	<a href="cats/showForm">Hello World Cats form</a>
+	<a href="cats/showForm">Hello World Cats form</a> <br>
+	<a href="student/showForm">Student form</a>
 	
 </body>
 </html>
