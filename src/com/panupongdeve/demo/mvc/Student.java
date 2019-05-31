@@ -7,6 +7,8 @@ public class Student {
 	private String lastName;
 	private String country;
 	private String grade;
+	private String favoriteLanguage;
+	private String[] operatingSystems;
 	
 	private LinkedHashMap<String, String> gradeOptions;
 	
@@ -65,12 +67,44 @@ public class Student {
 	public void setGradeOptions(LinkedHashMap<String, String> gradeOptions) {
 		this.gradeOptions = gradeOptions;
 	}
+	
+	
+
+	public String getFavoriteLanguage() {
+		return favoriteLanguage;
+	}
+
+	public void setFavoriteLanguage(String favoriteLanguage) {
+		this.favoriteLanguage = favoriteLanguage;
+	}
+	
+	
+
+	public String[] getOperatingSystems() {
+		return operatingSystems;
+	}
+
+	public void setOperatingSystems(String[] operatingSystems) {
+		this.operatingSystems = operatingSystems;
+	}
+	
+	private String printOeratingSystems() {
+		String result = "OeratingSystems:";
+		
+		for (String os : this.operatingSystems) {
+			result = result.concat(" " + os);
+		}
+		
+		return result;
+	}
 
 	public String toString() {
 		return "theStudent: "
 				+ this.getFirstName() +" "
 				+ this.getLastName() + " "
 				+ this.getCountry() + " "
-				+ this.getGrade();
+				+ this.getGrade() + " "
+				+ this.getFavoriteLanguage() + " "
+				+ this.printOeratingSystems();
 	}
 }
